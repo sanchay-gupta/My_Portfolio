@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale-1.0">
+<title>ANIMATED PORTFOLIO WEBSITE</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My </span>Portfolio</a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+       </header>
+       
+       <div class="content">
+           <h3>HEY</h3> 
+           <h2>I AM_<span>Sanchay </span></h2>
+           <h2>I Know <p><span id="text"></span></p></h2>
+           <p>As a Mechanical Engineering student at Birla Institute of Technology, Mesra, I'm eager to apply my technical skills and knowledge to develop innovative engineering solutions. I aim to work in an environment that fosters growth and offers challenging projects. Leveraging my expertise in content writing, programming, and data analysis, along with experience in resource management and event coordination, I aim to contribute effectively.</p>
+           <button>HIRE ME</button>
+           <button class="chat"><ion-icon name="document-text-outline"></ion-icon> Download CV</button>
+       </div>
+       <img src="sanchay%20portfolio%20image.png" class ="myself">
+       <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+       </ul>
+       <div class="daynight">
+        <ion-icon name="sunny-outline"></ion-icon>
+        <ion-icon name="moon-outline"></ion-icon>
+       </div>
+    </section>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+        
+        
+        
+        let typingText=new Typed("#text",{
+            strings : ["HTML" , "C/C++", "Content Writing" , "Poster Designing" , "SOLODWORKS" , "AutoCAD"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed:50,
+            backDelay:1000,
+        })
+        
+        
+        
+        
+        let banner=document.querySelector('.banner');
+        let daynight=document.querySelector('.daynight');
+        daynight.onclick=function(){
+            banner.classList.toggle('night')
+        }  
+    </script>
+</body>
+</html>
